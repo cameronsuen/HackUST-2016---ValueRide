@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackust.taxi.taxihitchhike.ConfirmFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please scan the QR Code for Payment"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="20dp"
+        android:textSize="40sp" />
+</FrameLayout>

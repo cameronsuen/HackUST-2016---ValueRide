@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TaxiHitchHike</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search_start">Starting location</string>
+    <string name="search_dest">Destination location</string>
+    <string name="google_app_id">636220191797</string>
+    <string name="google_maps_key">AIzaSyBsDvEvcSK38ULqwToc_cAftOmOccaiIAk</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_plan">No Plan Available</string>
+    <string name="create">Create One</string>
+    <string name="save">Save</string>
+    <string name="cost">$30</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_final">FinalActivity</string>
+</resources>

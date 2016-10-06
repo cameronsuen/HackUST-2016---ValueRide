@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.hackust.taxi.taxihitchhike.MapsActivity" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/search_bg"
+        android:layout_marginTop="30dp">
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:id="@+id/searchStart"
+            android:inputType="textAutoComplete"
+            android:layout_gravity="center_horizontal|top"
+            android:drawableStart="@drawable/green_circle"
+            android:elevation="5dp"
+            android:drawablePadding="5dp"
+            android:hint="@string/search_start"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:singleLine="true"
+            android:background="#FFFFFF" />
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:id="@+id/searchDest"
+            android:inputType="textAutoComplete"
+            android:layout_gravity="center_horizontal|top"
+            android:drawableStart="@drawable/red_circle"
+            android:elevation="5dp"
+            android:drawablePadding="5dp"
+            android:hint="@string/search_dest"
+            android:layout_below="@id/searchStart"
+            android:singleLine="true"
+            android:background="#FFFFFF" />
+
+        <!--<TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker"
+            android:timePickerMode="spinner"
+            android:layout_below="@id/searchDest"
+            android:elevation="5dp"/>-->
+
+        <!--<fragment
+            android:id="@+id/start_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment" />
+        <fragment
+            android:id="@+id/dest_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_below="@id/start_autocomplete_fragment" />-->
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plan_layout"
+        android:layout_gravity="center_horizontal|bottom"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/middle"></FrameLayout>
+
+    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/plan_column"
+        android:name="com.hackust.taxi.taxihitchhike.NoPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.hackust.taxi.taxihitchhike.MapsActivity"
+        android:layout_gravity="center_horizontal|bottom" />-->
+
+
+</FrameLayout>

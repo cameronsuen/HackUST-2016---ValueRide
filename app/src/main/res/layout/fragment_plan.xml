@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.hackust.taxi.taxihitchhike.NoPlan">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Found"
+        android:layout_alignParentLeft="true"
+        android:padding="15dp"
+        android:id="@+id/found"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignBottom="@+id/save_layout"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agree"
+        android:id="@+id/join_event"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:textColor="@color/abc_secondary_text_material_dark"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="createEvent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/cost_layout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:id="@+id/time_layout"
+        android:layout_toEndOf="@id/found">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Time"
+            android:id="@+id/time_plan_prompt"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30m"
+            android:id="@+id/total_time"
+            android:layout_margin="5dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:id="@+id/save_layout"
+        android:layout_toEndOf="@id/time_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Save"
+            android:id="@+id/save_plan_prompt"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$40"
+            android:id="@+id/cost_save"
+            android:layout_margin="5dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toStartOf="@id/create_event"
+        android:layout_toEndOf="@id/save_layout"
+        android:gravity="center"
+        android:id="@+id/cost_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Cost"
+            android:id="@+id/save_prompt"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$94"
+            android:id="@+id/save_cost"
+            android:layout_margin="5dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

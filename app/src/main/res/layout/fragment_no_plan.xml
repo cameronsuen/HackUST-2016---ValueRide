@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.hackust.taxi.taxihitchhike.NoPlan">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_plan"
+        android:layout_alignParentLeft="true"
+        android:padding="15dp"
+        android:id="@+id/noplan"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignTop="@+id/linearLayout" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        android:id="@+id/create_event"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:textColor="@color/abc_secondary_text_material_dark"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignTop="@+id/linearLayout"
+        android:onClick="createEvent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_toStartOf="@id/create_event"
+        android:layout_toEndOf="@id/noplan"
+        android:gravity="center"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/save"
+            android:id="@+id/save_prompt"
+            android:layout_margin="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cost"
+            android:id="@+id/save_cost"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
